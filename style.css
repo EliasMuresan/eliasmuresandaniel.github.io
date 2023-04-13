@@ -1,0 +1,168 @@
+/* Setarea stilului pentru body */
+body {
+    background-color: #ccc;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(arad-background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Setarea stilului pentru header */
+header {
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Setarea stilului pentru titlu */
+h1 {
+    font-size: 50px;
+    font-family: 'Segoe Script', cursive;
+    color: white;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Setarea stilului pentru meniu */
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #F9C74F;
+    transform: scale(1.1);
+}
+
+/* Setarea stilului pentru continutul principal */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Setarea stilului pentru secțiuni */
+section {
+    margin-bottom: 50px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+section:nth-child(odd) {
+    animation-delay: 0.5s;
+}
+
+section:nth-child(even) {
+    animation-delay: 1s;
+}
+
+section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+section ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+section li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Setarea stilului pentru imagini */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/* Setarea stilului pentru harta */
+#map {
+    height: 500px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/* Setarea stilului pentru subsol */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20
+}
+	/* Setarea stilului pentru textul din subsol */
+footer p {
+	font-size: 16px;
+	text-align: center;
+	}
+	
+	/* Animatii */
+	@keyframes fadeIn {
+	0% {
+	opacity: 0;
+	transform: translateY(-20px);
+	}
+	100% {
+	opacity: 1;
+	transform: translateY(0);
+	}
+	}
+	
+	@keyframes fadeInUp {
+	0% {
+	opacity: 0;
+	transform: translateY(20px);
+	}
+	100% {
+	opacity: 1;
+	transform: translateY(0);
+	}
+	}
+	
+	@keyframes fadeInDown {
+	0% {
+	opacity: 0;
+	transform: translateY(-20px);
+	}
+	100% {
+	opacity: 1;
+	transform: translateY(0);
+	}
+	}
